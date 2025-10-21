@@ -1,0 +1,127 @@
+:root {
+      --bg: #070707;
+      --muted: #bfbfbf;
+      --accent: #c72b2b;
+    }
+    body {
+      font-family: 'Sriracha', cursive;
+      background: var(--bg);
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background: rgba(8,8,8,0.85);
+      border-bottom: 1px solid rgba(199,43,43,0.2);
+    }
+    .navbar-brand .brand {
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #eee !important;
+    }
+    .nav-link:hover {
+      color: var(--accent) !important;
+    }
+    /* Hero / Banner */
+    .hero {
+      min-height: 90vh;
+      position: relative;
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+    }
+    .hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-title {
+      color: var(--accent);
+      text-shadow: 0 3px 15px rgba(0,0,0,0.8);
+      font-size: 2.5rem;
+    }
+    .hero-sub {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+    .cover-img {
+      max-width: 100%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    }
+
+    .section {
+      padding: 60px 15px;
+    }
+    .section-title {
+      color: var(--accent);
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+      margin-bottom: 30px;
+    }
+    .content-box {
+      background: #111;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .quote-block {
+      border-left: 4px solid rgba(199,43,43,0.7);
+      padding-left: 15px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .review-card {
+      background: #0d0d0d;
+      border: 1px solid rgba(255,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn-accent {
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+    .btn-accent:hover {
+      background-color: #a02020;
+      border-color: #a02020;
+    }
+
+    .footer {
+      background: #050505;
+      color: #777;
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid rgba(255,0,0,0.05);
+    }
+
+    /* Responsive tweak */
+    @media(max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+
+    .accordion-item {
+  background-color: #0b0b0b;
+  border: 1px solid #c72b2b;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c72b2b;
+  color: #fff;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body {
+  background-color: #111;
+  color: #ddd;
+}
