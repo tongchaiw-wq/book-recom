@@ -4,7 +4,7 @@
       --accent: #c72b2b;
     }
     body {
-      font-family: 'Sriracha', cursive;
+      font-family: 'Prompt', sans-serif;
       background: var(--bg);
       color: #eee;
       scroll-behavior: smooth;
@@ -108,20 +108,91 @@
         font-size: 2rem;
       }
     }
+/* ปรับโทนสีของ Accordion ให้เข้ากับธีมสยอง */
+.accordion-item {
+  background-color: #111 !important; /* ดำด้าน */
+  border: 1px solid #333 !important;
+  color: #f8f8f8 !important;
+}
 
-    .accordion-item {
-  background-color: #0b0b0b;
-  border: 1px solid #c72b2b;
+.accordion-button {
+  background-color: #1b1b1b !important;
+  color: #fff !important;
+  font-weight: 500;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #c72b2b;
-  color: #fff;
-}
-.accordion-button:focus {
+  background-color: #e50914 !important; /* สีแดงเลือดเมื่อกดเปิด */
+  color: #fff !important;
   box-shadow: none;
 }
+
+.accordion-button:focus {
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.6) !important;
+}
+
 .accordion-body {
-  background-color: #111;
-  color: #ddd;
+  background-color: #000 !important;
+  color: #ddd !important;
+  line-height: 1.6;
+}
+
+ body {
+  background-image: url("../images/bg1.jpg"); /* เปลี่ยนชื่อไฟล์ตามภาพที่คุณใช้ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* ให้ภาพพื้นหลังอยู่กับที่เวลาเลื่อน */
+}
+
+
+  .cover-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  filter: grayscale(30%) brightness(80%) contrast(120%) drop-shadow(0 0 10px rgb(255, 0, 0));
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.cover-img:hover {
+  transform: scale(1.05) rotate(-1deg);
+  filter: grayscale(50%) brightness(60%) contrast(150%) drop-shadow(0 0 20px rgb(255, 0, 0));
+}
+
+/* ฟอนต์ */
+.hero-title {
+   font-family: 'Prompt', sans-serif;
+  font-size: 3.5rem;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 5px rgb(255, 0, 0);}
+
+  .hero-title:hover {
+  color: darkred;
+  text-shadow: 0 0 10px red;
+  transform: scale(1.05) rotate(-1deg);
+  transition: all 0.4s ease;
+}
+
+.navbar {
+  background-image: url("images/blood-drip.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem; /* ขนาดเล็กลงเมื่ออยู่บนมือถือ */
+  }
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #111;
+    font-family: 'Prompt', sans-serif;
 }
